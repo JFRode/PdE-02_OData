@@ -3,6 +3,8 @@
 
 This is a simple API project used to know about the Open Data Protocol (**OData**).
 
+[Look for more PdE here!](https://github.com/topics/pde-jfrode)
+
 **Technologies used**
 * ASP.NET Core 2.2
 * Entity Framework Core
