@@ -1,11 +1,11 @@
 # PdE-02_OData
 **P**rojeto **d**e **E**studo (Study project)
 
-This is a simple API project used to know about the Open Data Protocol (**OData**).
+This is a simple project to practice code, especially Open Data Protocol (**OData**).
 
 [Look for more PdE here!](https://github.com/topics/pde-jfrode)
 
-**Technologies used**
+**Tech Stack**
 * ASP.NET Core 2.2
 * Entity Framework Core
 * [OData](https://www.odata.org)
