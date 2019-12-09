@@ -13,6 +13,22 @@ This is a simple project to practice code, especially Open Data Protocol (**ODat
 **Sources**
 * [Channel 9: Supercharging your Web APIs with OData and ASP.NET Core](https://channel9.msdn.com/Shows/On-NET/Supercharging-your-Web-APIs-with-OData-and-ASPNET-Core)
 
+## Step by step for use OData in your application
+
+* Install NuGet Package ```Microsoft.AspNet.OData``` in your project;
+* In ```Startup.cs``` add ```services.AddOData()``` on ConfigureServices method;
+* In ```Startup.cs```, add the code below in the Configure method:
+```
+app.UseMvc(routeBuilder =>
+    {
+        routeBuilder.EnableDependencyInjection();
+        routeBuilder.Expand().Select().Count().OrderBy();
+    });
+```
+* Put [EnableQuery()] data annotation in your methods for enable OData;
+* Done.
+
+
 ## Examples
 
 ### Example 1
