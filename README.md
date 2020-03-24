@@ -16,7 +16,15 @@ This is a simple project to practice code, especially Open Data Protocol (**ODat
 ## Step by step for use OData in your application
 
 * Install NuGet Package ```Microsoft.AspNet.OData``` in your project;
-* In ```Startup.cs``` add ```services.AddOData()``` on ConfigureServices method;
+* In ```Startup.cs``` add the code below in the ConfigureServices method;
+```
+// You need this line only if you using dotnet core 3.1
+services.AddControllers(mvcOptions =>
+                mvcOptions.EnableEndpointRouting = false);
+
+services.AddOData();
+```
+
 * In ```Startup.cs```, add the code below in the Configure method:
 ```
 app.UseMvc(routeBuilder =>
